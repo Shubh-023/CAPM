@@ -1,6 +1,3 @@
-import CAPM_Return as main
-import matplotlib.pyplot as plt
-import numpy as np
 import streamlit as st
 import pandas as pd
 import yfinance as yf
@@ -69,8 +66,8 @@ beta_value, return_value = get_beta_and_return(selected_stock, selected_num_of_y
 # print(f"Beta value for {selected_stock}: {beta_value}")
 # print(f"Expected return for {selected_stock}: {return_value}")
 
-st.markdown(f'### Beta value for {selected_stock}: {beta_value}')
-st.markdown(f"### Expected return for {selected_stock}: {return_value}")
+st.markdown(f'### Beta value for {selected_stock} : {beta_value}')
+st.markdown(f"### Expected return for {selected_stock} : {return_value}")
 
 
 
