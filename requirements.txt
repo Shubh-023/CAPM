@@ -3,3 +3,5 @@ pandas
 numpy
 streamlit
 plotly
+pandas_datareader
+datetime
