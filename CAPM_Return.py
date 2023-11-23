@@ -2,7 +2,7 @@
 
 import streamlit as st
 import pandas as pd
-import yfinance as yf
+import yfinance as yf2
 import datetime as dt
 import functions as fn
 import pandas_datareader.data as web
@@ -38,7 +38,7 @@ try:
     stocks_df = pd.DataFrame()
 
     for stock in stockList:
-        data = yf.download(stock, period=f"{selectedNumOfYear}y")
+        data = yf2.download(stock, period=f"{selectedNumOfYear}y")
         stocks_df[f"{stock}"] = data["Close"]
 
     stocks_df.reset_index(inplace=True)
